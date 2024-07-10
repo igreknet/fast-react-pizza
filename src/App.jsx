@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom';
 
 import Home from './ui/Home';
 import Error from './ui/Error';
@@ -10,7 +10,7 @@ import CreateOrder, { action as createOrderAction } from './features/order/Creat
 import Order, { loader as orderLoader } from './features/order/Order';
 import { action as updateOrderAction } from './features/order/UpdateOrder';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/fast-react-pizza/',
     element: <AppLayout />,
