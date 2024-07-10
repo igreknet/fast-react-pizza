@@ -12,6 +12,7 @@ import { action as updateOrderAction } from './features/order/UpdateOrder';
 
 const router = createBrowserRouter([
   {
+    path: '/fast-react-pizza/',
     element: <AppLayout />,
     errorElement: <Error />,
 
