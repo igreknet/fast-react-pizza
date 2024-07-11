@@ -18,7 +18,7 @@ const router = createHashRouter([
 
     children: [
       {
-        path: '/vite-react-router/',
+        path: '/vite-react-router',
         element: <Home />,
       },
       {
