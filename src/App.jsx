@@ -22,22 +22,22 @@ const router = createHashRouter([
         element: <Home />,
       },
       {
-        path: '/menu',
+        path: 'menu',
         element: <Menu />,
         loader: menuLoader, //connect loader to route
         errorElement: <Error />,
       },
       {
-        path: '/cart',
+        path: 'cart',
         element: <Cart />,
       },
       {
-        path: '/order/new',
+        path: 'order/new',
         element: <CreateOrder />,
         action: createOrderAction,
       },
       {
-        path: '/order/:orderId',
+        path: 'order/:orderId',
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
