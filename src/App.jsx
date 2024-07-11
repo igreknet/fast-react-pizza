@@ -48,5 +48,5 @@ const router = createHashRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} basename="/fast-react-pizza/" />;
 }
