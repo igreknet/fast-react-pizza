@@ -18,26 +18,26 @@ const router = createHashRouter([
 
     children: [
       {
-        path: '',
+        path: '/vite-react-router/',
         element: <Home />,
       },
       {
-        path: 'menu',
+        path: '/vite-react-router/menu',
         element: <Menu />,
         loader: menuLoader, //connect loader to route
         errorElement: <Error />,
       },
       {
-        path: 'cart',
+        path: '/vite-react-router/cart',
         element: <Cart />,
       },
       {
-        path: 'order/new',
+        path: '/vite-react-router/order/new',
         element: <CreateOrder />,
         action: createOrderAction,
       },
       {
-        path: 'order/:orderId',
+        path: '/vite-react-router/order/:orderId',
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
