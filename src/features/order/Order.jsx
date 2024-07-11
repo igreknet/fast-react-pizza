@@ -17,7 +17,7 @@ function Order() {
   //get data, when page first loaded
   useEffect(() => {
     if (!fetcher.data && fetcher.state === 'idle') {
-      return fetcher.load('/menu');
+      return fetcher.load('/fast-react-pizza/menu');
     }
   }, [fetcher]);
 

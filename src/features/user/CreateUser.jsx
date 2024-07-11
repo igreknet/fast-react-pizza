@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 function CreateUser() {
   const [username, setUsername] = useState('');
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -16,8 +16,8 @@ function CreateUser() {
       return;
     }
 
-    dispatch(updateName(username))
-    navigate('/menu')
+    dispatch(updateName(username));
+    navigate('/fast-react-pizza/menu');
   }
 
   return (
@@ -30,7 +30,7 @@ function CreateUser() {
         type="text"
         placeholder="Your full name"
         value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        onChange={e => setUsername(e.target.value)}
         className="input mb-8 w-72"
       />
 

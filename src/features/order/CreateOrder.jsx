@@ -169,7 +169,7 @@ export async function action({ request }) {
   //access to dispatch function, don't use often, it deactivates some optimization perfomances on this page
   store.dispatch(clearCart());
 
-  return redirect(`/order/${newOrder.id}`);
+  return redirect(`/fast-react-pizza/order/${newOrder.id}`);
 }
 
 export default CreateOrder;

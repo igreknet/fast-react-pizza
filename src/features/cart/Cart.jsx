@@ -22,7 +22,7 @@ function Cart() {
 
   return (
     <div className="px-3 py-3">
-      <LinkButton to="/menu">&larr; Back to menu</LinkButton>
+      <LinkButton to="/fast-react-pizza/menu">&larr; Back to menu</LinkButton>
 
       <h2 className="mt-7 text-xl font-semibold">Your cart, {username}</h2>
 
@@ -33,7 +33,7 @@ function Cart() {
       </ul>
 
       <div className="mt-6 space-x-2">
-        <Button to="/order/new" type="primary">
+        <Button to="/fast-react-pizza/order/new" type="primary">
           Order pizzas
         </Button>
 

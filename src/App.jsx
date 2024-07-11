@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './ui/Home';
 import Error from './ui/Error';
@@ -12,31 +12,32 @@ import { action as updateOrderAction } from './features/order/UpdateOrder';
 
 const router = createBrowserRouter([
   {
+    path: '/fast-react-pizza',
     element: <AppLayout />,
     errorElement: <Error />,
 
     children: [
       {
-        path: '/',
+        path: '/fast-react-pizza',
         element: <Home />,
       },
       {
-        path: '/menu',
+        path: '/fast-react-pizza/menu',
         element: <Menu />,
         loader: menuLoader, //connect loader to route
         errorElement: <Error />,
       },
       {
-        path: '/cart',
+        path: '/fast-react-pizza/cart',
         element: <Cart />,
       },
       {
-        path: '/order/new',
+        path: '/fast-react-pizza/order/new',
         element: <CreateOrder />,
         action: createOrderAction,
       },
       {
-        path: '/order/:orderId',
+        path: '/fast-react-pizza/order/:orderId',
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
@@ -47,5 +48,5 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} basename="/fast-react-pizza/" />;
+  return <RouterProvider router={router} />;
 }
